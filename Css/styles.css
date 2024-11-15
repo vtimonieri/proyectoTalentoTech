@@ -1,0 +1,285 @@
+/* Archivo styles.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Estilo para el encabezado */
+header {
+  background: linear-gradient(45deg, #ff6f61, #ffcc00);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+}
+
+header nav {
+  margin-top: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffcc00;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+header .logo img {
+  max-width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Implementar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+
+/* Archivo style.css */
+
+/* Estilos generales para la sección de nutrición animal */
+#nutricion-animal {
+  background-color: #f8f9fa; /* Fondo claro */
+  padding: 50px 0; /* Espaciado superior e inferior */
+  text-align: center;
+}
+
+#nutricion-animal .container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px;
+}
+
+#nutricion-animal h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #ff6f61; /* Color llamativo para el título */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad al título */
+}
+
+#nutricion-animal p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo para el visor de PDF */
+.pdf-viewer {
+  background-color: #fff; /* Fondo blanco para el visor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del visor */
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.pdf-viewer embed {
+  border-radius: 8px; /* Bordes redondeados en el visor */
+}
+
+/* Estilo para la sección de descarga */
+.download-section {
+  margin-top: 30px;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #ff6f61; /* Color de fondo del botón */
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+.download-button:hover {
+  background-color: #ffcc00; /* Cambio de color al pasar el ratón */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Estilos para el responsive */
+@media (max-width: 768px) {
+  #nutricion-animal .container {
+      width: 90%;
+  }
+
+  #nutricion-animal h2 {
+      font-size: 2rem;
+  }
+
+  #nutricion-animal p {
+      font-size: 1rem;
+  }
+
+  .pdf-viewer embed {
+      height: 500px; /* Reducir altura del visor en dispositivos pequeños */
+  }
+}
+
+/* Estilos generales del footer */
+footer {
+  background-color: #333; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  padding: 40px 0; /* Espaciado vertical */
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-container > div {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 30px; /* Espaciado entre las columnas */
+}
+
+.footer-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive; /* Fuente para los títulos */
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container ul li {
+  margin-bottom: 10px;
+}
+
+.footer-container ul li a {
+  color: #ffcc00; /* Color de los enlaces */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+  color: #ff6f61; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo para la sección de redes sociales */
+.social-media ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media ul li {
+  margin: 0 10px;
+}
+
+.social-media ul li a img {
+  width: 40px; /* Tamaño de los iconos */
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-media ul li a:hover img {
+  transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+/* Estilo para el boletín de suscripción */
+.newsletter {
+  background-color: #444; /* Fondo ligeramente más claro */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.newsletter input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #ffcc00; /* Cambio de color del botón al pasar el ratón */
+}
+
+/* Estilo para el footer-bottom */
+.footer-bottom {
+  text-align: center;
+  background-color: #222; /* Fondo aún más oscuro */
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive - Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-container > div {
+      margin-bottom: 30px;
+      min-width: 100%;
+  }
+
+  .newsletter input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .newsletter button {
+      width: 100%;
+  }
+}
