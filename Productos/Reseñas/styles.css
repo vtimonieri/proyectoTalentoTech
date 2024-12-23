@@ -1,0 +1,81 @@
+/* General body and layout styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Grid container for the reviews */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Individual review card styles */
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.review-card .review-info {
+    margin-left: 20px;
+}
+
+.review-card .review-info h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.review-card .review-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+.review-card .review-rating {
+    color: #f39c12;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.review-card .review-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}

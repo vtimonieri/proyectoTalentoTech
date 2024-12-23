@@ -1,0 +1,129 @@
+/* General body and layout styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Grid container for the products */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Individual product card styles */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #777;
+}
+
+.card-body .price {
+    font-size: 16px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Button for navigating to description */
+.card-body button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-body button:hover {
+    background-color: #2980b9;
+}
+
+/* Section for product description */
+#descripcion-producto {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#descripcion-producto h2 {
+    color: #333;
+}
+
+#reseñas-producto {
+    margin-top: 20px;
+}
+
+/* Individual review card styles */
+.reseña-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.reseña-card h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.reseña-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+.reseña-card .review-rating {
+    color: #f39c12;
+    font-size: 16px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
